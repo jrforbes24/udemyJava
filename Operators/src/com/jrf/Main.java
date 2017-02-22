@@ -52,10 +52,35 @@ public class Main {
         if (topScore >= 100)
             System.out.println("You got the high score");
 
-        int secondTopScore = 60;
-        if (topScore > secondTopScore || topScore < 100)
+        int secondTopScore = 95;
+        if ((topScore > secondTopScore) || (topScore < 100))
             System.out.println("Greater than second top score and less then 100");
 
+        if ((topScore > 110) || (secondTopScore <= 90))
+            System.out.println("One of these tests is true.");
+
+        int newValue = 50;
+        if (newValue == 50)
+            System.out.println("This is true");
+
+        boolean isCar = true;
+        if (isCar)
+            System.out.println("you just assigned it to true");
+
+        boolean wasCar = isCar ? true : false;
+        if (wasCar)
+            System.out.println("wasCar is true");
+
+//      create a double variable with the value of 20
+        double firstDouble = 20;
+        double secondDouble = 80;
+        double thirdDouble = (firstDouble + secondDouble) * 25;
+        double fourthDouble = thirdDouble%40;
+
+        if (fourthDouble <= 20)
+            System.out.println("Total was over the limit");
+
+        System.out.println(fourthDouble);
 
     }
 }
